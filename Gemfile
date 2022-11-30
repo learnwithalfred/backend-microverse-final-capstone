@@ -50,7 +50,6 @@ gem 'faker'
 
 gem 'rack-cors', require: 'rack/cors'
 
-
 gem 'rspec-rails', '~> 6.0.0.rc1'
 
 gem 'factory_bot_rails'
