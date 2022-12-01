@@ -58,3 +58,7 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
+
+#Remove carriage return character rule because of linux/windows issues
+Layout/EndOfLine:
+  Enabled: false

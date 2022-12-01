@@ -1,5 +1,6 @@
 class CarsController < ApplicationController
   before_action :set_car, only: %i[show update destroy]
+  before_action :authenticate_user!
 
   def index
     @cars = Car.all
