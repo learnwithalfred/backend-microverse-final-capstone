@@ -1,6 +1,11 @@
 class ApplicationController < ActionController::API
   before_action :configure_permitted_parameters, if: :devise_controller?
 
+  rescue_from CanCan::AccessDenied do |exception|
+    exception.default_message = 'You are not authorized to purform this task'
+    head :forbidden
+  end
+
   protected
 
   def configure_permitted_parameters

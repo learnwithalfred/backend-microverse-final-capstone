@@ -5,4 +5,10 @@ class User < ApplicationRecord
          :jwt_authenticatable,
          :registerable,
          jwt_revocation_strategy: JwtDenylist
+  enum role: %i[user admin]
+  after_initialize :set_default_role, if: :new_record?
+  # set default role to user  if not set
+  def set_default_role
+    self.role ||= :user
+  end
 end
