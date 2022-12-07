@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
- describe 'When testing car model' do
+  describe 'When testing car model' do
     before(:each) do
       @user = FactoryBot.build(:user)
     end
@@ -27,8 +27,8 @@ RSpec.describe User, type: :model do
       it 'should save the user' do
         expect(@user).to be_valid
       end
-        it 'should not save the user if email already exist' do
-          FactoryBot.create(:user, email:@user.email)
+      it 'should not save the user if email already exist' do
+        FactoryBot.create(:user, email: @user.email)
         expect(@user).to_not be_valid
       end
     end
@@ -39,13 +39,10 @@ RSpec.describe User, type: :model do
         expect(@user).to_not be_valid
       end
 
-
       it 'password should not be less tham minimum length' do
         @user.password = 'a' * (User::MIN_NUM - 1)
         expect(@user).to_not be_valid
       end
-
     end
-
   end
 end
