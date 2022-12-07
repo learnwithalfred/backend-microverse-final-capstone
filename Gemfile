@@ -13,7 +13,6 @@ group :development, :test do
   gem 'dotenv-rails'
 
   gem 'rails-controller-testing'
-
 end
 
 group :development do
