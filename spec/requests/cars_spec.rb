@@ -2,12 +2,31 @@ require 'swagger_helper'
 
 RSpec.describe 'cars', type: :request do
   before(:each) do
-    @user = FactoryBot.create(:user)
+    @user = FactoryBot.create(:user, role:"user")
+    @admin_user = FactoryBot.create(:user, role:"admin")
     @car = FactoryBot.create(:car)
-    sign_in @user
+    
+    post '/auth/login', params: {
+      email: @user.email,
+      password: @user.password
+    }.to_json
+    json = JSON.parse(response.body).with_indifferent_access
+    @token = json['token']
+    post '/auth/login', params: {
+      email: @admin.email,
+      password: @admin.password
+    }.to_json
+    json_admin = JSON.parse(response.body).with_indifferent_access
+    @token_admin = json_admin['token']
   end
   
   path '/cars' do
+
+    before(:each) do
+      get '/cars', headers: {
+        Authorization: @token
+      }
+    end
 
     get('list cars') do
       response(200, 'successful') do
