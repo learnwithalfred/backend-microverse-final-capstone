@@ -16,4 +16,20 @@ RSpec.describe 'Users controller', type: :request do
     end
   end
 
-  
+  describe 'POST /users/sign_in' do
+    before do
+      post user_session_path({ email: 'admin@gmail.com', password: 'password' })
+    end
+
+    it 'logs in an existent user successfully' do
+      sign_in @user
+      get cars_path
+      assert_response :success
+    end
+
+    it 'returns a 200 status' do
+      sign_in @user
+      assert_response :success
+    end
+  end
+
