@@ -6,7 +6,6 @@ RSpec.describe 'Users controller', type: :request do
     sign_in @user
   end
 
-
   describe 'POST /users' do
     before(:each) do
       get user_session_path
@@ -32,7 +31,6 @@ RSpec.describe 'Users controller', type: :request do
       assert_response :success
     end
   end
-
 
   describe 'DELETE /users/sign_out' do
     it 'deletes a user successfully' do
