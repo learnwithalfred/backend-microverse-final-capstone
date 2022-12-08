@@ -31,3 +31,5 @@ gem 'factory_bot_rails'
 gem 'rspec-rails', '~> 6.0.0.rc1'
 
 gem 'cancancan'
+
+gem "active_model_serializers", "~> 0.10.13"
