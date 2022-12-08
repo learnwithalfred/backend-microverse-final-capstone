@@ -1,0 +1,84 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/cars":
+    get:
+      summary: list cars
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create car
+      parameters:
+      - name: car
+        in: data
+        schema:
+          type: object
+          properties:
+            name:
+              type: string
+            image:
+              type: string
+            brand:
+              type: string
+            duration:
+              type: integer
+            total_amount_payable:
+              type: integer
+            option_to_purchase_fee:
+              type: integer
+            description:
+              type: string
+          required:
+          - name
+          - image
+          - brand
+          - duration
+          - total_amount_payable
+          - option_to_purchase_fee
+          - description
+      responses:
+        '200':
+          description: successful
+  "/cars/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show car
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update car
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update car
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete car
+      responses:
+        '200':
+          description: successful
+  "/":
+    get:
+      summary: list cars
+      responses:
+        '200':
+          description: successful
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: 127.0.0.1:3000/
