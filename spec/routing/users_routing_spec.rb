@@ -10,8 +10,8 @@ RSpec.describe UsersController, type: :routing do
       expect(get: '/users/edit').to route_to('users/registrations#edit')
     end
 
-    it 'routes to #create' do
-      expect(post: '/users/sign_up').to route_to('users/registrations#new')
+    it 'routes to #new' do
+      expect(get: '/users/sign_up').to route_to('users/registrations#new')
     end
 
     it 'routes to #cancel via GET' do
