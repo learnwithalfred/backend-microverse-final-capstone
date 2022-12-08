@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :cars
+  resources :cars, except: %i[new edit]
   devise_for :users,
              controllers: {
                  sessions: 'users/sessions',

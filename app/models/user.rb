@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   MAX_EMAIL_LENGTH = 50
-  MAX_NAME_LENGTH = 35
+  MAX_NAME_LENGTH = 255
   MAX_LENGTH = 50
   MIN_NUM = 6
 
