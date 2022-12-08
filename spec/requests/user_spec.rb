@@ -33,3 +33,12 @@ RSpec.describe 'Users controller', type: :request do
     end
   end
 
+
+  describe 'DELETE /users/sign_out' do
+    it 'deletes a user successfully' do
+      sign_out @user
+      get new_user_registration_path
+      assert_response :success
+    end
+  end
+end
