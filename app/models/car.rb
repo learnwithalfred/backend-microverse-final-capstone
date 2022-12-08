@@ -3,7 +3,7 @@ class Car < ApplicationRecord
 
   MAX_LENGTH = 250
   MIN_NUM = 1
-  MAX_NUM = 10_000_000
+  MAX_NUM = 100_000_000
 
   validates :name, presence: true, length: { minimum: MIN_NUM, maximum: MAX_LENGTH }
   validates :brand, presence: true, length: { minimum: MIN_NUM, maximum: MAX_LENGTH }
