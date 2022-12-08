@@ -1,4 +1,6 @@
 class Car < ApplicationRecord
+  has_many :reservations
+
   MAX_LENGTH = 250
   MIN_NUM = 1
   MAX_NUM = 10_000_000
