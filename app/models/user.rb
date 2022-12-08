@@ -2,8 +2,8 @@ class User < ApplicationRecord
   has_many :reservations
 
   VALID_EMAIL_REGEX = /\A([\w+-].?)+@[a-z\d-]+(\.[a-z]+)*\.[a-z]+\z/i
-  MAX_EMAIL_LENGTH = 50
-  MAX_NAME_LENGTH = 35
+  MAX_EMAIL_LENGTH = 250
+  MAX_NAME_LENGTH = 100
   MIN_NUM = 6
   validates :name, presence: true, length: { maximum: MAX_NAME_LENGTH }
   validates :email,

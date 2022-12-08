@@ -35,7 +35,7 @@ RSpec.describe User, type: :model do
 
     context 'When testing edge cases with the method' do
       it 'name should not exceed maximum length' do
-        @user.name = 'a' * (User::MAX_LENGTH + 1)
+        @user.name = 'a' * (User::MAX_NAME_LENGTH + 1)
         expect(@user).to_not be_valid
       end
 
