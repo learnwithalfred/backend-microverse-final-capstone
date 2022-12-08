@@ -14,4 +14,16 @@ RSpec.describe UsersController, type: :routing do
       expect(post: '/users/sign_up').to route_to('users/registrations#new')
     end
 
+    it 'routes to #cancel via GET' do
+      expect(get: '/users/cancel').to route_to('users/registrations#cancel')
+    end
+
+    it 'routes to #create via POST' do
+      expect(post: '/users/sign_in').to route_to('users/sessions#create')
+    end
+
+    it 'routes to #destroy' do
+      expect(delete: '/users/sign_out').to route_to('users/sessions#destroy')
+    end
+  end
 end
