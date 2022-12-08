@@ -5,6 +5,8 @@ class ReservationsController < ApplicationController
     render json: @reservations
   end
 
+  def show; end
+
   def create
     @reservation = Reservation.new(reservation_params)
 
@@ -12,11 +14,12 @@ class ReservationsController < ApplicationController
       render json: @reservation, status: :created, location: @reservation
     else
       render json: @reservation.errors, status: :unprocessable_entity
-    end  end
+    end
+  end
 
   private
 
   def reservation_params
-    params.require(:car).permit(:user_id, :car_id, :date, :city)
+    params.require(:reservation).permit(:user_id, :car_id, :date, :city)
   end
 end

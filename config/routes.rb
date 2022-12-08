@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :cars
-  resources :reservation, only: [:index, :create]
+  resources :reservations, only: [:index, :create, :show]
   devise_for :users,
              controllers: {
                  sessions: 'users/sessions',
