@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :reservations
+  has_many :reservations, dependent: :destroy
 
   VALID_EMAIL_REGEX = /\A([\w+-].?)+@[a-z\d-]+(\.[a-z]+)*\.[a-z]+\z/i
   MAX_EMAIL_LENGTH = 250

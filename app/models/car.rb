@@ -1,5 +1,5 @@
 class Car < ApplicationRecord
-  has_many :reservations
+  has_many :reservations, dependent: :destroy
 
   MAX_LENGTH = 250
   MIN_NUM = 1

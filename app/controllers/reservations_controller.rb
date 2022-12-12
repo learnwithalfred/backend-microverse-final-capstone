@@ -18,6 +18,11 @@ class ReservationsController < ApplicationController
     end
   end
 
+  def destroy
+    @car = Car.find(params[:id])
+    @car.destroy
+  end
+
   private
 
   def reservation_params
