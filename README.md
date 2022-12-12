@@ -2,8 +2,6 @@
 
 <div align="center">
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
   <h3><b>Microverse Final group capstone - Book an Appointment - Backend</b></h3>
 
 </div>
@@ -24,13 +22,10 @@
     - [Install](#install)
     - [Usage](#usage)
     - [Run tests](#run-tests)
-    - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
-  - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [❓ FAQ ](#-faq-)
   - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
@@ -103,26 +98,24 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/EyasuTeshome/final-capstone-project-front-end
+  git clone https://github.com/learnwithalfred/backend-microverse-final-capstone
 ```
--
 
 ### Install
 
 Install this project with:
 
 ```sh
-  cd final-capstone-project-front-end
-  npm install
+  cd backend-microverse-final-capstone
+  bundle install
 ```
--
 
 ### Usage
 
 To run the project, execute the following command:
 
 ```sh
-  npm run start
+  rails s
 ```
 
 ### Run tests
@@ -131,20 +124,9 @@ To run tests, run the following command:
 
 
 ```sh
-  npm run test
+  rspec
 ```
 
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -200,9 +182,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+- [Creative Commons](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign) for design
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
