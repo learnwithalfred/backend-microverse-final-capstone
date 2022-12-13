@@ -16,6 +16,7 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
+  - [🚀 Kanban Board ](#-kanban-board-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -76,6 +77,15 @@ The project is based on an app to book an appointment to try a Car. User see all
 
 - [Live Demo Link](https://tesla-rent.onrender.com/)
 - [API URL](https://microverse-final-capstone-backend.onrender.com)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Kanban Board -->
+
+## 🚀 Kanban Board <a name="kanban-board"></a>
+
+- [Link to Kanban Board](https://github.com/users/learnwithalfred/projects/12)
+- [Link to the screenshot of the initial state of your Kanban board ](https://user-images.githubusercontent.com/34389326/204762915-30588b46-794a-4dba-bf74-2b3e1e7466ae.png)
+- Final number of team members - 4
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
