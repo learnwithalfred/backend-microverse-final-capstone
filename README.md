@@ -125,6 +125,9 @@ Install this project with:
 To run the project, execute the following command:
 
 ```sh
+  rails db:create
+  rails db:migrate
+  rails db:seed
   rails s
 ```
 
