@@ -12,7 +12,6 @@ us integration
     "Cache-Control" => "public, max-age=#{1.hour.to_i}"
   }
 
-  # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
   config.cache_store = :null_store
@@ -24,13 +23,8 @@ us integration
   config.action_mailer.perform_caching = false
   config.action_mailer.delivery_method = :test
 
-  # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
-
-  # Raise exceptions for disallowed deprecations.
   config.active_support.disallowed_deprecation = :raise
-
-  # Tell Active Support which deprecation messages to disallow.
   config.active_support.disallowed_deprecation_warnings = []
 
 end
