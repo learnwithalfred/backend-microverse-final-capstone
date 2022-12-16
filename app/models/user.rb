@@ -17,7 +17,6 @@ class User < ApplicationRecord
             length: { minimum: MIN_NUM }
   before_save :to_lowercase
 
-  # Include default devise modules. Others available are:
   devise :database_authenticatable,
          :jwt_authenticatable,
          :registerable,
