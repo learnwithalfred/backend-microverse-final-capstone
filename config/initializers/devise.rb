@@ -1,14 +1,4 @@
-# frozen_string_literal: true
-
-# Assuming you have not yet modified this file, each configuration option below
-# is set to its default value. Note that some are commented out while others
-# are not: uncommented lines are intended to protect your configu
-# Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
-  # The secret key used by Devise. Devise uses this key to generate
-  # random tokens. Changing this key will render invalid all existing
-  # confirmation, reset password and unlock tokens in the database.
-  # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = 'e3ae76777ac04570b5317ae87dc47c8e8e27cb1b17d12070623845acdbae46a8ef8e0aef27c51f3778aeb5ea73ed1a9724d2677877cc497cb15a975bc81ee711'
 
@@ -74,16 +64,6 @@ Devise.setup do |config|
   # :database      = Support basic authentication with authentication key + password
   # config.http_authenticatable = false
 
-  # If 401 status code should be returned for AJAX requests. True by default.
-  # config.http_authenticatable_on_xhr = true
-
-  # The realm used in Http Basic Authentication. 'Application' by default.
-  # config.http_authentication_realm = 'Application'
-
-  # It will change confirmation, password recovery and other workflows
-  # to behave the same regardless if the e-mail provided was right or wrong.
-  # Does not affect registerable.
-  # config.paranoid = true
 
   # By default Devise will store the user in session. You can skip storage for
   # particular strategies by setting this option.
