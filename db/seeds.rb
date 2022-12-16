@@ -1,6 +1,4 @@
 
-# #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-
 Car.create([
   {
     name:"MODEL 3", image:"https://i.ibb.co/y6YVSjz/tesla2.png", brand:"Tesla", duration:200, total_amount_payable:500, option_to_purchase_fee:900
